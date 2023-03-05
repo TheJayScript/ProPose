@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pdemo.css">
+    <link rel="icon" href="images/about-img.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <script src="pdemo.js"></script>
+    <title>PRO POSE</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo2.png" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#about">about</a>
+            <a href="#category">category</a>
+            <a href="#quotes">quotes</a>
+            <a href="#footer">review</a>
+            <a href="#footer">subscribe</a>
+        </nav>    
+    </header>
+    <!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h4>Welcome To</h4>
+        <h3>Pro <span>Pose</span></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+        <a href="#category" class="btn">Explore <i class="fa fa-arrow-right"></i></a>
+    </div>
+   
+    <div class="bubbles">
+        <img src="./images/Classic Contrapposto.jpg" alt="">
+        <img src="./images/backward chair.jpg" alt="">
+        <img src="./images/wall.jpeg" alt="">
+        <img src="./images/urban.jpg" alt="">
+        <img src="./images/sitting.jpg" alt="">
+        <img src="./images/cart.jpg" alt="">
+        <img src="./images/Classic Contrapposto.jpg" alt="">
+        <img src="./images/Classic Contrapposto.jpg" alt="">
+   
+    </div>
+</section>
+
+<!-- home section ends -->
+
+<!--about section starts here-->
+<section id="about" class="section-b">
+    <div class="overlay">
+      <div class="section-b-inner py-5">
+        <h3 class="text-2">About <span> Us</span></h3>
+        <h2 class="text-5 mt-1">A Basic Guide To Spice Up Your Pose For The Camera.</h2>
+        <p class="mt-1">
+          Pose like a Pro - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+          repudiandae laboriosam quia, error tempore porro ducimus voluptate
+          laborum nostrum iure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!--about section ends here-->
+
+<!-- category section starts-->
+<section class="category" id="category">
+  <a href="mengal.html">
+<div class="card card1">
+
+        <h5>MEN</h5>
+        <P>Taking pictures as a man can be quite difficult, I mean, most men don't even want the stress that comes with as they just want to stand there, take a picture and go on with there lives. We have put together a few pose tutorials to help YOU!</P>
+</div>
+</a>
+<a href="womengal.html">
+    <div class="card card2">
+        <h5>WOMEN</h5>
+        <P>Taking pictures as a man can be quite difficult, I mean, most men don't even want the stress that comes with as they just want to stand there, take a picture and go on with there lives. We have put together a few pose tutorials to help YOU!</P>
+          </div>
+        </a>
+    <div class="card card3">
+        <h5>KIDS</h5>
+        <P>Taking pictures as a man can be quite difficult, I mean, most men don't even want the stress that comes with as they just want to stand there, take a picture and go on with there lives. We have put together a few pose tutorials to help YOU!</P>
+
+         </div>
+         <a href="nonophoto.html">
+    <div class="card card4">
+        <h5>NON PHOTOGENIC</h5>
+        <P>Taking pictures as a man can be quite difficult, I mean, most men don't even want the stress that comes with as they just want to stand there, take a picture and go on with there lives. We have put together a few pose tutorials to help YOU!</P>
+
+         </div>
+        </a>
+   
+</section>
+<!-- category section ends-->
+
+<!--random quotes start-->
+<section id="quotes" class="section-b2">
+    <div class="overlay">
+      <div class="section-b2-inner py-5">
+        <h3 class="text-2"> Quotes That Motivate<span> YOU!</span></h3>
+        <h2 class="text-5 mt-1">A Pro Poser Once said:</h2>
+        <p class="mt-1" id="quote-parag">
+            "Don't just stand there, let's get to it, Strike a pose, there is nothing to it" - Madonna Cicoone.
+        </p>
+        <button class="btn" id="quote-btn">Next Quote</button>
+      </div>
+    </div>
+  </section>
+
+
+<script>
+    
+ let quoteParag = document.querySelector("#quote-parag")
+        let quoteBtn = document.querySelector("#quote-btn")
+        let quotes = [
+            '"Dont just stand there, lets get to it, Strike a pose , there is nothing to it " - Madonna Cicoone',
+            '"Being natural is simply a pose, and the most irritating pose i know" - Oscar Wilde',
+            '"Sometimes i pose, but sometimes i pose as posing" - Stella Benson',
+            '" Cause im a musician, im not really good at posing and being a model, like, modelling" - Amy Winehouse'
+        ]
+
+        
+        quoteBtn.addEventListener("click", function() {
+            let randomQuote = quotes[Math.floor( Math.random() * quotes.length) ]
+           console.log(randomQuote)
+           quoteParag.textContent = randomQuote
+           nextQuote() 
+        })
+        
+            
+          function nextQuote() {
+            setTimeout(() => {
+                let randomQuote = quotes[Math.floor( Math.random() * quotes.length) ]
+           console.log(randomQuote)
+           quoteParag.textContent = randomQuote
+         
+            }, 1000);  
+        
+          }
+          $(function() {
+        const $gallery = $('.gallery a').simpleLightbox();
+      });
+      
+            </script>
+
+
+</body>
+
+<!--footer-->
+<footer class = "footer" id="footer">
+  <div class = "footer-container container">
+      <div>
+          <h2>PRO POSE</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati sapiente minima itaque nam modi libero optio vitae animi, praesentium quis commodi fugit quasi nostrum nihil veniam nisi suscipit cumque ducimus error doloribus est voluptatum at? Et aut mollitia quia.</p>
+      </div>
+      <div>
+          <h3>Free Subscription!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, facere eius! Ipsam laborum modi, cumque dolor incidunt animi nam magni.</p>
+
+          <div class = "subs">
+              <i class = "fas fa-envelope"></i>
+              <input type = "email" id = "email" placeholder="Email Address">
+              <button type = "submit">SUBSCRIBE</button>
+          </div>
+      </div>
+
+      <div class="contact" id="contact">
+        
+        <form action="">
+            <h3>Send Us A <span>Review</span></h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type = "email" id = "email" placeholder="Email Address">
+               
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="text" placeholder="Eg. I found this site helpful...">
+            </div>
+            <input type="submit" value="Send" class="btn">
+        </form>
+
+      </div>
+  </div>
+  <p>&copy; Copyright TheJayScript Webs. </p>
+</footer>
+<!-- end of footer -->
+
+</html>
