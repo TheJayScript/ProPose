@@ -157,6 +157,7 @@ section{
 }
 .category {
     width: 100%;
+    margin-left: 130px;
 }
 .category .card{
     position: flex;
@@ -207,9 +208,7 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
-
 }
-
 .bubbles {
     width: 100%;
     display: flex;
@@ -237,8 +236,7 @@ section{
     }
 
 }
-
-/* about css */
+/* about starts here*/
 .section-b {
     margin-top: 30px;
 }
@@ -249,8 +247,6 @@ section{
     height: 600px;
    
   }
-  
-  
   .section-b-inner,  .section-b2-inner {
     color: #fff;
     height: 100%;
